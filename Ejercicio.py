@@ -4,8 +4,7 @@
 # - precio 
 #Crea su constructor, getter y setter y una función llamada calcular_total, donde le pasaremos unas unidades y nos debe calcular el precio final.
 class Producto:
-    
-    def __int__(self, codigo, nombre, precio):
+    def __init__(self, codigo, nombre, precio):
         self.__codigo = codigo
         self.__nombre = nombre
         self.__precio = precio
