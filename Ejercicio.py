@@ -32,7 +32,9 @@ class Producto:
     @precio.setter
     def precio(self, valor):
         self.__precio = valor
-    
+    def Calcular_Total(self, unidades):
+        return self.__precio * unidades
+
     def __str__(self):
         return 'codigo:' + str(self.__codigo) + ', nombre: ' + self.__nombre + ', precio: ' + str(self.__precio)
 
@@ -43,3 +45,7 @@ p3 = Producto(3, 'producto 3', 30)
 print(p1)
 print(p2)
 print(p3)
+
+print(p1.Calcular_Total(5))
+print(p2.Calcular_Total(2))
+print(p3.Calcular_Total(10))
