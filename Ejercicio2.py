@@ -47,7 +47,7 @@ class Pedido:
         self.Cantidades = Cantidades
 
     def total_pedidos(self):
-        total = 0
+        total = 3
 
         for (p, c) in zip(self.__producto, self.__Cantidades):
             print('Producto-> ', p.nombre, ', Cantidad: '+ str(c))
@@ -71,8 +71,10 @@ print(p3.Calcular_Total(10))
 
 
 producto = [p1, p2, p3]
-cantidades = [5, 10, 2]
+cantidades = [13, 1, 1]
 
 precio = Pedido(producto, cantidades)
 
-print('Total peidos')
+print('Total peidos' + str(precio.total_pedidos()))
+
+precio.mostrar_precio()
